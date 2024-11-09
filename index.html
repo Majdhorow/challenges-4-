@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+    .attribution { font-size: 11px; text-align: center; 
+      padding-top: 32px;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      padding: 40px 0;
+      height: 100vh;
+      background-color: #F3EAE3;
+      
+    }
+    .product-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .product-card img { 
+      width: 272px;
+      border-radius: 8px 0  0 8px;
+    }
+
+    .content-box {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      gap: 27.39px;
+      background-color: #fff;
+      padding: 26px 32px;
+      border-radius: 0 8px 8px 0;
+    }
+    .content-box .info {
+      display: flex;
+      flex-direction: column;
+      width: 201px;
+      gap: 13px;
+    }
+
+    .content-box .info .categories {
+      font-family: "Montserrat", serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: #98979F;
+    }
+    .content-box .info h2 {
+      font-family: "Fraunces", serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: #1E1E1E;
+    }
+    .content-box .info  .description {
+      font-family: "Montserrat", serif;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 167%;
+      color: #98979F;
+    }
+    .content-box .price {
+      display: flex;
+      align-items: center;
+      align-content: start;
+      gap: 18px;
+
+    }
+
+    .content-box .price h3 {
+      display: inline;
+      font-family: "Fraunces", serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: #3F806A;
+    }
+    .content-box .price p {
+      display: inline;
+      font-family: "Montserrat", serif;
+      font-size: 12px;
+      font-size: 400;
+      color: #98979F;
+      line-height: 167%;
+      text-decoration: line-through;
+    }
+    .content-box  .button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      background-color: #3D8168;
+      color: #fff;
+      gap: 10px;
+      padding: 12px ;
+    }
+    .content-box  .button img {
+      display: inline;
+      width: 16px;
+    }
+
+    .content-box  .button p{ 
+      display: inline;
+      font-family: "Montserrat", serif;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="product-card">
+    <img src="./image-product-desktop.jpg" alt="Product image">
+    <div class="content-box">
+      <div class="info">
+        <p class="categories">Perfume</p>
+        <h2>Gabrielle Essence Eau De Parfum</h2>
+        <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+      </div>
+      <div class="price">
+        <h3>$149.99</h3>
+        <p>$169.99</p>
+      </div>
+      <div class="button">
+        <img src="./icon-cart.svg" alt="Add Cart">
+        <p>Add to Cart</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Perfume
+
+  Gabrielle Essence Eau De Parfum
+
+  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.
+
+  $149.99
+  $169.99
+
+  Add to Cart -->
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
